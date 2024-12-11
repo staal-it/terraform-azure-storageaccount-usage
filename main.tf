@@ -16,7 +16,7 @@ resource "azurerm_resource_group" "rg" {
 
 module "storageaccount" {
   source  = "staal-it/storageaccount/azure"
-  version = "0.1.3"
+  version = "0.1.4"
 
   resource_group_name  = azurerm_resource_group.rg.name
   storage_account_name = "westeurope"
